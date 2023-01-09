@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InsertMatchActivity">
+
+    <ImageView
+        android:id="@+id/bacground_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/for_bacground_home_loading"
+        android:contentDescription="@string/home_name"
+        android:src="@drawable/bacground_home" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/caption_insert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:contentDescription="@string/home_name"
+            android:fontFamily="@font/montserrat"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:text="@string/caption_insert"
+            android:textAlignment="center"
+            android:textColor="@color/for_player"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/blok_match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="55dp"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/frame29" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:src="@drawable/frame29">
+
+        <Spinner
+            android:id="@+id/spinner_klub1"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="170dp"
+            android:background="@drawable/spinner"
+            android:contentDescription="@string/home_name"
+            android:minHeight="48dp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <Spinner
+            android:id="@+id/spinner_klub2"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="120dp"
+            android:background="@drawable/spinner"
+            android:contentDescription="@string/home_name"
+            android:minHeight="48dp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="120dp"
+            android:hint="@string/editTextDate"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:ems="10"
+            android:inputType="date" />
+        <Spinner
+            android:id="@+id/spinner_plan"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="120dp"
+            android:background="@drawable/spinner"
+            android:contentDescription="@string/home_name"
+            android:minHeight="48dp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <EditText
+            android:id="@+id/editTextgoals"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="120dp"
+            android:ems="10"
+            android:hint="@string/editTextgoals"
+            android:inputType="text|numberSigned"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/editTextgears"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="120dp"
+            android:ems="10"
+            android:hint="@string/editTextgears"
+            android:inputType="text|numberSigned"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/editTextresult"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="120dp"
+            android:ems="10"
+            android:hint="@string/editTextresult"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+        <Spinner
+            android:id="@+id/spinner_sezon"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="120dp"
+            android:background="@drawable/spinner"
+            android:contentDescription="@string/home_name"
+            android:minHeight="48dp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+        <ImageView
+            android:id="@+id/btn_add_match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/add_match"
+            tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/logo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="645dp"
+        android:contentDescription="@string/home_name"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/logo_name"
+        android:textAlignment="center"
+        android:textColor="@color/for_player"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/logo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="645dp"
+        android:background="@color/for_player"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/logo_second_name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="1dp">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pibplayer"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewPosition"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="@string/posplayer"
+        android:layout_marginStart="50dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewNumberPlayer"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="@string/numpl"
+        android:layout_marginStart="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

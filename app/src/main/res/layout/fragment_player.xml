@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PlayerFragment">
+
+    <ImageView
+        android:id="@+id/bacground_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/for_bacground_home_loading"
+        android:contentDescription="@string/home_name"
+        android:src="@drawable/bacground_home" />
+
+    <TextView
+        android:id="@+id/Text_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="265dp"
+        android:layout_marginTop="115dp"
+        android:contentDescription="@string/home_name"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/Text_user"
+        android:textAlignment="center"
+        android:textColor="@color/for_player"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/User_image"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="325dp"
+        android:layout_marginTop="80dp"
+        android:clickable="true"
+        android:contentDescription="@string/home_name"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/name_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="335dp"
+        android:layout_marginTop="115dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/name_user"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/caption_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:contentDescription="@string/home_name"
+            android:fontFamily="@font/montserrat"
+            android:paddingLeft="170dp"
+            android:paddingRight="170dp"
+            android:text="@string/Main_name_player"
+            android:textAlignment="center"
+            android:textColor="@color/for_player"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/blok_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/frame29" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/blok_player_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/home_name"
+        android:src="@drawable/block_team" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/caption_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="185dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/text_with_player"
+            android:textAlignment="center"
+            android:textColor="@color/white2"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/caption_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="185dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/filter_position"
+            android:textAlignment="center"
+            android:textColor="@color/white2"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/spinner"
+            android:contentDescription="@string/home_name"
+            android:minHeight="48dp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <ImageView
+            android:id="@+id/position_pz"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="210dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/frame26" />
+
+        <ImageView
+            android:id="@+id/position_apz"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="210dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/frame24" />
+
+        <ImageView
+            android:id="@+id/position_cz"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="210dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/frame27" />
+
+        <ImageView
+            android:id="@+id/position_vr"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="210dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/vr" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_player"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="255dp"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/shaparenko" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fio_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="270dp"
+                android:text="@string/temp_text_fio"
+                android:textAlignment="center"
+                android:textColor="@color/white2"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temp_text_number"
+                android:textAlignment="center"
+                android:textColor="@color/teal"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/value_date_born"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-230dp"
+            android:layout_marginTop="278dp"
+            android:text="@string/temp_text_date"
+            android:textAlignment="center"
+            android:textColor="@color/white2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/value_amplua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="278dp"
+            android:text="@string/temp_text_amplua"
+            android:textAlignment="center"
+            android:textColor="@color/white2"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/image_klub"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:contentDescription="@string/home_name"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="250dp"
+            android:src="@drawable/dinamo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/caption_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="165dp"
+            android:layout_marginTop="255dp"
+            android:text="@string/text_date"
+            android:textAlignment="center"
+            android:textColor="@color/teal"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/rectangle_date"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="170dp"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/frame32" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/caption_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="255dp"
+            android:text="@string/text_amplua"
+            android:textAlignment="center"
+            android:textColor="@color/teal"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/rectangle_amplua"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="260dp"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/frame32" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/caption_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="300dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/more_information"
+            android:textAlignment="center"
+            android:textColor="@color/white2"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/line_dop_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-40dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/frame30"
+            tools:ignore="ImageContrastCheck" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/value_liga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="325dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/temp_text_liga"
+            android:textAlignment="center"
+            android:textColor="@color/white2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/caption_trener"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="325dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/trener"
+            android:textAlignment="center"
+            android:textColor="@color/teal"
+            android:textSize="12sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/value_fio_trener"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="325dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/temp_text_fio_trener"
+            android:textAlignment="center"
+            android:textColor="@color/white2"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/frame31"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_number_pib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/text_number_pib"
+                android:textAlignment="center"
+                android:textColor="@color/text_player"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/text_pib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/text_pib"
+                android:textAlignment="center"
+                android:textColor="@color/text_player"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/tablePlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+        </ListView>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="610dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/exit1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/exit"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/logo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="185dp"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/home_name"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/logo_name"
+            android:textAlignment="center"
+            android:textColor="@color/for_player"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/logo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/for_player"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/logo_second_name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</FrameLayout>
