@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PlanFragment">
+
+    <ImageView
+        android:id="@+id/bacground_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/for_bacground_home_loading"
+        android:contentDescription="@string/home_name"
+        android:src="@drawable/bacground_home" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/caption_plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:fontFamily="@font/montserrat"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:text="@string/caption_plan"
+            android:textAlignment="center"
+            android:textColor="@color/for_player"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+        <ImageView
+            android:id="@+id/blok_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="110dp"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/frame29" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/blok_search_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/home_name"
+        android:src="@drawable/block_team" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/caption_search_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="135dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/search_number"
+            android:textAlignment="center"
+            android:textColor="@color/white2"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/caption_search_fio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="135dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/search_fio"
+            android:textAlignment="center"
+            android:textColor="@color/white2"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/RadioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="155dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/numbertext1"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <RadioButton
+            android:id="@+id/RadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="155dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/numbertext"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:ignore="TextContrastCheck" />
+
+        <RadioButton
+            android:id="@+id/RadioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="155dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/othertext"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:ignore="TextContrastCheck" />
+
+        <RadioButton
+            android:id="@+id/RadioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="155dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/litertext"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:ignore="TextContrastCheck" />
+
+        <RadioButton
+            android:id="@+id/RadioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="155dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/litertext1"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:ignore="TextContrastCheck" />
+
+        <RadioButton
+            android:id="@+id/RadioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="155dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/text_with_H"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/line_dop_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="@string/home_name"
+        android:src="@drawable/frame30"
+        tools:ignore="ImageContrastCheck" />
+
+    <Spinner
+        android:id="@+id/spinner_plan"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/spinner_plan"
+        android:contentDescription="@string/home_name"
+        android:minHeight="48dp"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/image_plan"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="55dp"
+        android:contentDescription="@string/home_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="420dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/frame31"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_use_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/text_use_plan"
+                android:textAlignment="center"
+                android:textColor="@color/text_player"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/value_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="80dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/team"
+                android:textAlignment="center"
+                android:textColor="@color/text_player"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/text_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/text_position"
+                android:textAlignment="center"
+                android:textColor="@color/text_player"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/text_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:clickable="true"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/text_num"
+                android:textAlignment="center"
+                android:textColor="@color/text_player"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/tablePlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+        </ListView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/logo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="2"
+            android:contentDescription="@string/home_name"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/logo_name"
+            android:textAlignment="center"
+            android:textColor="@color/for_player"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/logo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="2"
+            android:background="@color/for_player"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/logo_second_name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</FrameLayout>

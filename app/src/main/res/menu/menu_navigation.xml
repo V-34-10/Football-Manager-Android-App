@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_launcher_player"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/plan"
+        android:icon="@drawable/ic_launcher_plan"
+        android:title="@string/plan" />
+    <item
+        android:id="@+id/match"
+        android:icon="@drawable/ic_launcher_match"
+        android:title="@string/match" />
+    <item
+        android:id="@+id/transfer"
+        android:icon="@drawable/ic_launcher_transfer"
+        android:title="@string/transfer" />
+</menu>

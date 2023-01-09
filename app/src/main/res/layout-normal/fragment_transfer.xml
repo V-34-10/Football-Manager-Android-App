@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TransferFragment">
+
+    <ImageView
+        android:id="@+id/bacground_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/for_bacground_home_loading"
+        android:contentDescription="@string/home_name"
+        android:src="@drawable/bacground_home" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/caption_transfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:fontFamily="@font/montserrat"
+            android:minHeight="48dp"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:text="@string/caption_transfer"
+            android:textAlignment="center"
+            android:textColor="@color/for_player"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/blok_transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/frame29" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="320dp"
+        android:background="@drawable/frame31"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_number_transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="2dp"
+                android:clickable="true"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/text_number_transfer"
+                android:textAlignment="center"
+                android:textColor="@color/text_player"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/text_pibTransfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="2dp"
+                android:clickable="true"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/text_pib"
+                android:textAlignment="center"
+                android:textColor="@color/text_player"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/tableTransfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+        </ListView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/line_dop_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/home_name"
+        android:src="@drawable/line_transfer"
+        tools:ignore="ImageContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_add_transfer"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="325dp"
+            android:layout_marginTop="358dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:minHeight="48dp"
+            android:src="@drawable/add"
+            android:visibility="invisible"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+        <ImageView
+            android:id="@+id/btn_delete_transfer"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="358dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:minHeight="48dp"
+            android:src="@drawable/delete"
+            android:visibility="invisible"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bloc_player_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/home_name"
+        android:src="@drawable/blok_player_transfer"
+        tools:ignore="ImageContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/caption_transfer_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="370dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/caption_transfer_player"
+            android:textAlignment="center"
+            android:textColor="@color/for_player"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_transfer"
+            android:layout_width="90dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="12dp"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/shaparenko_tranfer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/rectangle_position"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="415dp"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/frame32" />
+
+        <ImageView
+            android:id="@+id/rectangle_klub"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="415dp"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/frame32" />
+
+        <ImageView
+            android:id="@+id/rectangle_trener"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="415dp"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/frame32" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/rectangle_price"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="440dp"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/rectangle_transfer" />
+
+        <ImageView
+            android:id="@+id/rectangle_termin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="440dp"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/rectangle_transfer" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fio_playerTransfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="440dp"
+            android:text="@string/temp_text_fio"
+            android:textAlignment="center"
+            android:textColor="@color/white2"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/numberTransfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="105dp"
+            android:text="@string/temp_text_number"
+            android:textAlignment="center"
+            android:textColor="@color/teal"
+            android:textSize="12sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/caption_date1_transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="105dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/begin_contract"
+            android:textAlignment="center"
+            android:textColor="@color/white2"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/value_date1_transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="-22dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/temp_text_date1"
+            android:textAlignment="center"
+            android:textColor="@color/white2"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/caption_date2_transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="105dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/end_contract"
+            android:textAlignment="center"
+            android:textColor="@color/white2"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/value_date2_transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="245dp"
+            android:layout_marginTop="-22dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/temp_text_date2"
+            android:textAlignment="center"
+            android:textColor="@color/white2"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/caption_klub_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="405dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/caption_klub_transfer"
+        android:textAlignment="center"
+        android:textColor="@color/teal"
+        android:textSize="12sp"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/value_klub_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="421dp"
+        android:text="@string/temp_text_klub"
+        android:textAlignment="center"
+        android:textColor="@color/white2"
+        android:textSize="12sp"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/caption_position_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="405dp"
+        android:text="@string/text_amplua"
+        android:textAlignment="center"
+        android:textColor="@color/teal"
+        android:textSize="12sp"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/value_position_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="421dp"
+        android:text="@string/temp_text_amplua"
+        android:textAlignment="center"
+        android:textColor="@color/white2"
+        android:textSize="12sp"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/caption_trener_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="405dp"
+        android:text="@string/caption_trener_transfer"
+        android:textAlignment="center"
+        android:textColor="@color/teal"
+        android:textSize="12sp"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/value_trener_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="308dp"
+        android:layout_marginTop="423dp"
+        android:text="@string/temp_text_fio_trener"
+        android:textAlignment="center"
+        android:textColor="@color/white2"
+        android:textSize="9sp"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/caption_price_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="438dp"
+        android:text="@string/caption_price_transfer"
+        android:textAlignment="center"
+        android:textColor="@color/teal"
+        android:textSize="10sp"
+        tools:ignore="SmallSp,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/value_price_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="315dp"
+        android:layout_marginTop="450dp"
+        android:text="@string/temp_text_price"
+        android:textAlignment="center"
+        android:textColor="@color/white2"
+        android:textSize="12sp"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/caption_termin_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="352dp"
+        android:layout_marginTop="438dp"
+        android:text="@string/caption_termin_transfer"
+        android:textAlignment="center"
+        android:textColor="@color/teal"
+        android:textSize="10sp"
+        tools:ignore="SmallSp,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/value_termin_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="365dp"
+        android:layout_marginTop="450dp"
+        android:text="@string/temp_text_termin"
+        android:textAlignment="center"
+        android:textColor="@color/white2"
+        android:textSize="12sp"
+        tools:ignore="TextContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/caption_transfer_search_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="530dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/caption_transfer_search_date"
+            android:textAlignment="center"
+            android:textColor="@color/white2"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/RadioButtonTransfer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="545dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/RadioButtonTransfer1"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonTransfer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="-48dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/RadioButtonTransfer2"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            tools:ignore="TextContrastCheck" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonTransfer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="-20dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/RadioButtonTransfer3"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            tools:ignore="TextContrastCheck" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonTransfer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="-48dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/RadioButtonTransfer4"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/caption_transfer_search_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="530dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/caption_transfer_search_team"
+            android:textAlignment="center"
+            android:textColor="@color/white2"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btn_dinamo"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="180dp"
+                android:clickable="true"
+                android:contentDescription="@string/home_name"
+                android:src="@drawable/btn_dinamo"
+                tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/btn_desna"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="180dp"
+                android:clickable="true"
+                android:contentDescription="@string/home_name"
+                android:src="@drawable/btn_desna"
+                tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/btn_shahtar"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="285dp"
+            android:layout_marginTop="555dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/btn_shahtar"
+            tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/btn_veres"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="285dp"
+            android:clickable="true"
+            android:contentDescription="@string/home_name"
+            android:src="@drawable/btn_veres"
+            tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/logo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_weight="2"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/home_name"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/logo_name"
+            android:textAlignment="center"
+            android:textColor="@color/for_player"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/logo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="2"
+            android:layout_marginTop="25dp"
+            android:background="@color/for_player"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/logo_second_name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</FrameLayout>
