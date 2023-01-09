@@ -9,9 +9,6 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-/*import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.Fragment;*/
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
@@ -42,8 +39,6 @@ import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity {
 
-    //private static long back_pressed;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,13 +53,6 @@ public class HomeActivity extends AppCompatActivity {
     //Вихід з додатку за допомогою кнопки назад
     @Override
     public void onBackPressed() {
-        /*if (back_pressed + 2000 > System.currentTimeMillis()) {
-            super.onBackPressed();
-        } else {
-            Toast.makeText(getBaseContext(), "Натисніть ще раз, щоб вийти!", Toast.LENGTH_SHORT).show();
-        }
-        back_pressed = System.currentTimeMillis();
-        finish();*/
         super.onBackPressed();
     }
 
